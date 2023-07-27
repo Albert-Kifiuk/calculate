@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Staatliches', cursive;
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px 20px;
+  background-image: url(stock-photo-sea-sunset.jpg);
+  background-size: cover;
+  background-position: center top;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  text-align: left;
+  color: #f0eaea;
+}
+
+.display {
+  border-radius: 12px;
+  height: 100px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #eaeef1;
+  pointer-events: none;
+  background-color: #9c9999;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  transition: transform 0.3s;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius:  40%;
+  border: none;
+  font-weight: 900;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: #f1a309;
+}
+
+.buttons button:active {
+  transform: scale(0.8);
+  transition: transform 0.3s;
+}
+
+.operator {
+  color: #0e02ff;
+}
+
+.buttons button:nth-child(16) {
+  background-color: rgb(246, 42, 42);
+  font-size: 30px;
+  color: #fff;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+ 
+ .act {
+  text-align: left;
+  color: #f0eaea;
+  font-size: 10px;
+}
+
+.name {
+  text-align: right;
+  color: #f0eaea;
+  font-size: 13px;
+}
+
+.special {
+  text-align: left;
+  color: #f0eaea;
+  font-size: 20px;
+  align-self: flex-end;
+}
